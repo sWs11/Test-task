@@ -69,7 +69,7 @@
 				if($row["parent"] !== ""){
 					echo("<div class='intro_block'><b>Parent: </b>".$row["parent"]."</div>");
 				}
-			echo("".++$cou."</div>");
+			echo("</div>");
 			
 			findChildren($parent_name);
 		}
@@ -227,7 +227,7 @@
 				$newNameParent = $newParent['name_company'];
 				$changeLevelParent = $newParent['level'];
 				$level = $changeLevelParent + 1;
-				echo("newParent[level] = ". $changeLevelParent."<br>");
+//				echo("newParent[level] = ". $changeLevelParent."<br>");
 			}else{
 				$newNameParent = "";
 				$level = 0;
